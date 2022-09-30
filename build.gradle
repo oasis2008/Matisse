@@ -17,8 +17,12 @@
 
 buildscript {
     repositories {
-        jcenter()
         google()
+        jcenter(){ url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        maven {url  "http://maven.rongcloud.cn/repository/maven-releases/"}
+        maven {url 'http://developer.huawei.com/repo/'}
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.1'
@@ -28,8 +32,12 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
         google()
+        jcenter(){ url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        maven {url  "http://maven.rongcloud.cn/repository/maven-releases/"}
+        maven {url 'http://developer.huawei.com/repo/'}
     }
 }
 
